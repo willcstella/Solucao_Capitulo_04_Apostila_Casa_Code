@@ -52,7 +52,13 @@
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.btn_Novo_Prod_Comprados = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
+            this.btn_Gravar_Prod_Comprados = new System.Windows.Forms.Button();
+            this.btn_Cancelar_Prod_Comprados = new System.Windows.Forms.Button();
+            this.btn_Excluir_Prod_Comprados = new System.Windows.Forms.Button();
+            this.btn_Excluir_Corpo_Nota = new System.Windows.Forms.Button();
+            this.btn_Cancelar_Corpo_Nota = new System.Windows.Forms.Button();
+            this.btn_Gravar_Corpo_Nota = new System.Windows.Forms.Button();
+            this.btn_Novo_Corpo_Nota = new System.Windows.Forms.Button();
             this.tableLayoutPanel1.SuspendLayout();
             this.tableLayoutPanel2.SuspendLayout();
             this.tableLayoutPanel3.SuspendLayout();
@@ -74,7 +80,7 @@
             this.tableLayoutPanel1.RowCount = 2;
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 12.2807F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 87.7193F));
-            this.tableLayoutPanel1.Size = new System.Drawing.Size(1051, 295);
+            this.tableLayoutPanel1.Size = new System.Drawing.Size(1051, 267);
             this.tableLayoutPanel1.TabIndex = 0;
             // 
             // tableLayoutPanel2
@@ -92,7 +98,7 @@
             this.tableLayoutPanel2.Controls.Add(this.textBox2, 1, 2);
             this.tableLayoutPanel2.Controls.Add(this.dateTimePicker1, 1, 3);
             this.tableLayoutPanel2.Controls.Add(this.dateTimePicker2, 1, 4);
-            this.tableLayoutPanel2.Location = new System.Drawing.Point(4, 40);
+            this.tableLayoutPanel2.Location = new System.Drawing.Point(4, 36);
             this.tableLayoutPanel2.Margin = new System.Windows.Forms.Padding(4);
             this.tableLayoutPanel2.Name = "tableLayoutPanel2";
             this.tableLayoutPanel2.RowCount = 5;
@@ -212,7 +218,7 @@
             this.tableLayoutPanel3.Controls.Add(this.comboBox2, 1, 1);
             this.tableLayoutPanel3.Controls.Add(this.textBox4, 1, 2);
             this.tableLayoutPanel3.Controls.Add(this.textBox5, 1, 3);
-            this.tableLayoutPanel3.Location = new System.Drawing.Point(545, 40);
+            this.tableLayoutPanel3.Location = new System.Drawing.Point(545, 36);
             this.tableLayoutPanel3.Margin = new System.Windows.Forms.Padding(4);
             this.tableLayoutPanel3.Name = "tableLayoutPanel3";
             this.tableLayoutPanel3.RowCount = 4;
@@ -304,7 +310,7 @@
             this.label1.Location = new System.Drawing.Point(107, 12);
             this.label1.Margin = new System.Windows.Forms.Padding(107, 12, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(193, 24);
+            this.label1.Size = new System.Drawing.Size(193, 20);
             this.label1.TabIndex = 2;
             this.label1.Text = "CORPO DA NOTA";
             // 
@@ -315,13 +321,13 @@
             this.label2.Location = new System.Drawing.Point(608, 12);
             this.label2.Margin = new System.Windows.Forms.Padding(67, 12, 4, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(280, 24);
+            this.label2.Size = new System.Drawing.Size(280, 20);
             this.label2.TabIndex = 3;
             this.label2.Text = "PRODUTOS COMPRADOS";
             // 
             // btn_Novo_Prod_Comprados
             // 
-            this.btn_Novo_Prod_Comprados.Location = new System.Drawing.Point(553, 325);
+            this.btn_Novo_Prod_Comprados.Location = new System.Drawing.Point(560, 275);
             this.btn_Novo_Prod_Comprados.Margin = new System.Windows.Forms.Padding(4);
             this.btn_Novo_Prod_Comprados.Name = "btn_Novo_Prod_Comprados";
             this.btn_Novo_Prod_Comprados.Size = new System.Drawing.Size(72, 28);
@@ -329,22 +335,88 @@
             this.btn_Novo_Prod_Comprados.Text = "Novo";
             this.btn_Novo_Prod_Comprados.UseVisualStyleBackColor = true;
             // 
-            // button1
+            // btn_Gravar_Prod_Comprados
             // 
-            this.button1.Location = new System.Drawing.Point(661, 325);
-            this.button1.Margin = new System.Windows.Forms.Padding(4);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(72, 28);
-            this.button1.TabIndex = 2;
-            this.button1.Text = "Gravar";
-            this.button1.UseVisualStyleBackColor = true;
+            this.btn_Gravar_Prod_Comprados.Location = new System.Drawing.Point(640, 275);
+            this.btn_Gravar_Prod_Comprados.Margin = new System.Windows.Forms.Padding(4);
+            this.btn_Gravar_Prod_Comprados.Name = "btn_Gravar_Prod_Comprados";
+            this.btn_Gravar_Prod_Comprados.Size = new System.Drawing.Size(72, 28);
+            this.btn_Gravar_Prod_Comprados.TabIndex = 2;
+            this.btn_Gravar_Prod_Comprados.Text = "Gravar";
+            this.btn_Gravar_Prod_Comprados.UseVisualStyleBackColor = true;
+            // 
+            // btn_Cancelar_Prod_Comprados
+            // 
+            this.btn_Cancelar_Prod_Comprados.Location = new System.Drawing.Point(720, 275);
+            this.btn_Cancelar_Prod_Comprados.Margin = new System.Windows.Forms.Padding(4);
+            this.btn_Cancelar_Prod_Comprados.Name = "btn_Cancelar_Prod_Comprados";
+            this.btn_Cancelar_Prod_Comprados.Size = new System.Drawing.Size(72, 28);
+            this.btn_Cancelar_Prod_Comprados.TabIndex = 3;
+            this.btn_Cancelar_Prod_Comprados.Text = "Cancelar";
+            this.btn_Cancelar_Prod_Comprados.UseVisualStyleBackColor = true;
+            // 
+            // btn_Excluir_Prod_Comprados
+            // 
+            this.btn_Excluir_Prod_Comprados.Location = new System.Drawing.Point(800, 275);
+            this.btn_Excluir_Prod_Comprados.Margin = new System.Windows.Forms.Padding(4);
+            this.btn_Excluir_Prod_Comprados.Name = "btn_Excluir_Prod_Comprados";
+            this.btn_Excluir_Prod_Comprados.Size = new System.Drawing.Size(72, 28);
+            this.btn_Excluir_Prod_Comprados.TabIndex = 4;
+            this.btn_Excluir_Prod_Comprados.Text = "Excluir";
+            this.btn_Excluir_Prod_Comprados.UseVisualStyleBackColor = true;
+            // 
+            // btn_Excluir_Corpo_Nota
+            // 
+            this.btn_Excluir_Corpo_Nota.Location = new System.Drawing.Point(256, 275);
+            this.btn_Excluir_Corpo_Nota.Margin = new System.Windows.Forms.Padding(4);
+            this.btn_Excluir_Corpo_Nota.Name = "btn_Excluir_Corpo_Nota";
+            this.btn_Excluir_Corpo_Nota.Size = new System.Drawing.Size(72, 28);
+            this.btn_Excluir_Corpo_Nota.TabIndex = 8;
+            this.btn_Excluir_Corpo_Nota.Text = "Excluir";
+            this.btn_Excluir_Corpo_Nota.UseVisualStyleBackColor = true;
+            // 
+            // btn_Cancelar_Corpo_Nota
+            // 
+            this.btn_Cancelar_Corpo_Nota.Location = new System.Drawing.Point(176, 275);
+            this.btn_Cancelar_Corpo_Nota.Margin = new System.Windows.Forms.Padding(4);
+            this.btn_Cancelar_Corpo_Nota.Name = "btn_Cancelar_Corpo_Nota";
+            this.btn_Cancelar_Corpo_Nota.Size = new System.Drawing.Size(72, 28);
+            this.btn_Cancelar_Corpo_Nota.TabIndex = 7;
+            this.btn_Cancelar_Corpo_Nota.Text = "Cancelar";
+            this.btn_Cancelar_Corpo_Nota.UseVisualStyleBackColor = true;
+            // 
+            // btn_Gravar_Corpo_Nota
+            // 
+            this.btn_Gravar_Corpo_Nota.Location = new System.Drawing.Point(96, 275);
+            this.btn_Gravar_Corpo_Nota.Margin = new System.Windows.Forms.Padding(4);
+            this.btn_Gravar_Corpo_Nota.Name = "btn_Gravar_Corpo_Nota";
+            this.btn_Gravar_Corpo_Nota.Size = new System.Drawing.Size(72, 28);
+            this.btn_Gravar_Corpo_Nota.TabIndex = 6;
+            this.btn_Gravar_Corpo_Nota.Text = "Gravar";
+            this.btn_Gravar_Corpo_Nota.UseVisualStyleBackColor = true;
+            // 
+            // btn_Novo_Corpo_Nota
+            // 
+            this.btn_Novo_Corpo_Nota.Location = new System.Drawing.Point(16, 275);
+            this.btn_Novo_Corpo_Nota.Margin = new System.Windows.Forms.Padding(4);
+            this.btn_Novo_Corpo_Nota.Name = "btn_Novo_Corpo_Nota";
+            this.btn_Novo_Corpo_Nota.Size = new System.Drawing.Size(72, 28);
+            this.btn_Novo_Corpo_Nota.TabIndex = 5;
+            this.btn_Novo_Corpo_Nota.Text = "Novo";
+            this.btn_Novo_Corpo_Nota.UseVisualStyleBackColor = true;
             // 
             // FormNotaEntrada
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1067, 554);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.btn_Excluir_Corpo_Nota);
+            this.Controls.Add(this.btn_Cancelar_Corpo_Nota);
+            this.Controls.Add(this.btn_Gravar_Corpo_Nota);
+            this.Controls.Add(this.btn_Novo_Corpo_Nota);
+            this.Controls.Add(this.btn_Excluir_Prod_Comprados);
+            this.Controls.Add(this.btn_Cancelar_Prod_Comprados);
+            this.Controls.Add(this.btn_Gravar_Prod_Comprados);
             this.Controls.Add(this.btn_Novo_Prod_Comprados);
             this.Controls.Add(this.tableLayoutPanel1);
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -388,6 +460,12 @@
         private System.Windows.Forms.TextBox textBox4;
         private System.Windows.Forms.TextBox textBox5;
         private System.Windows.Forms.Button btn_Novo_Prod_Comprados;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button btn_Gravar_Prod_Comprados;
+        private System.Windows.Forms.Button btn_Cancelar_Prod_Comprados;
+        private System.Windows.Forms.Button btn_Excluir_Prod_Comprados;
+        private System.Windows.Forms.Button btn_Excluir_Corpo_Nota;
+        private System.Windows.Forms.Button btn_Cancelar_Corpo_Nota;
+        private System.Windows.Forms.Button btn_Gravar_Corpo_Nota;
+        private System.Windows.Forms.Button btn_Novo_Corpo_Nota;
     }
 }
