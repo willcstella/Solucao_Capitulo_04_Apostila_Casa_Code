@@ -59,9 +59,13 @@
             this.btn_Cancelar_Corpo_Nota = new System.Windows.Forms.Button();
             this.btn_Gravar_Corpo_Nota = new System.Windows.Forms.Button();
             this.btn_Novo_Corpo_Nota = new System.Windows.Forms.Button();
+            this.dgv_produtosComprados = new System.Windows.Forms.DataGridView();
+            this.dgv_corpoNota = new System.Windows.Forms.DataGridView();
             this.tableLayoutPanel1.SuspendLayout();
             this.tableLayoutPanel2.SuspendLayout();
             this.tableLayoutPanel3.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dgv_produtosComprados)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgv_corpoNota)).BeginInit();
             this.SuspendLayout();
             // 
             // tableLayoutPanel1
@@ -405,11 +409,29 @@
             this.btn_Novo_Corpo_Nota.Text = "Novo";
             this.btn_Novo_Corpo_Nota.UseVisualStyleBackColor = true;
             // 
+            // dgv_produtosComprados
+            // 
+            this.dgv_produtosComprados.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgv_produtosComprados.Location = new System.Drawing.Point(560, 310);
+            this.dgv_produtosComprados.Name = "dgv_produtosComprados";
+            this.dgv_produtosComprados.Size = new System.Drawing.Size(499, 192);
+            this.dgv_produtosComprados.TabIndex = 9;
+            // 
+            // dgv_corpoNota
+            // 
+            this.dgv_corpoNota.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgv_corpoNota.Location = new System.Drawing.Point(19, 310);
+            this.dgv_corpoNota.Name = "dgv_corpoNota";
+            this.dgv_corpoNota.Size = new System.Drawing.Size(488, 192);
+            this.dgv_corpoNota.TabIndex = 10;
+            // 
             // FormNotaEntrada
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1067, 554);
+            this.Controls.Add(this.dgv_corpoNota);
+            this.Controls.Add(this.dgv_produtosComprados);
             this.Controls.Add(this.btn_Excluir_Corpo_Nota);
             this.Controls.Add(this.btn_Cancelar_Corpo_Nota);
             this.Controls.Add(this.btn_Gravar_Corpo_Nota);
@@ -430,6 +452,8 @@
             this.tableLayoutPanel2.PerformLayout();
             this.tableLayoutPanel3.ResumeLayout(false);
             this.tableLayoutPanel3.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dgv_produtosComprados)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgv_corpoNota)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -467,5 +491,7 @@
         private System.Windows.Forms.Button btn_Cancelar_Corpo_Nota;
         private System.Windows.Forms.Button btn_Gravar_Corpo_Nota;
         private System.Windows.Forms.Button btn_Novo_Corpo_Nota;
+        private System.Windows.Forms.DataGridView dgv_produtosComprados;
+        private System.Windows.Forms.DataGridView dgv_corpoNota;
     }
 }
